@@ -69,7 +69,8 @@
 
 - (void)cordovaPOSPrint:(CDVInvokedUrlCommand *)command {
     
-    UIImage *imageToPrint = [self generateImageFromText:[command.arguments firstObject]];
+    //UIImage *imageToPrint = [self generateImageFromText:[command.arguments firstObject]];
+    UIImage *imageToPrint = [UIImage imageWithData:imageData]; //---> Print base64 images
     
     //Then print Image
     
